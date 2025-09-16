@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- created by krupeczek -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v6.1.1/css/pro.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Weapon License | DOJ</title>
+</head>
+<!-- created by krupeczek -->
+<body>
+    <div class="app">
+        <div class="view">
+            <div class="doj-title">Licencja na broń palną - Pytania</div>
+            <div
+                style="display: flex; flex-direction: column; gap: 3vh; align-items: center; justify-content: center; width: 100%;">
+                <div class="doj-questions-title">Wybierz opcję</div>
+                <div class="doj-questions-options">
+                    <div class="doj-questions-option" onclick="ChangeCategory(this, 'rights')">Prawo i przepisy</div>
+                    <div class="doj-questions-option" onclick="ChangeCategory(this, 'build')">Budowa, typy i obsługa broni</div>
+                    <div class="doj-questions-option" onclick="ChangeCategory(this, 'using')">Uzycie broni</div>
+                    <div class="doj-questions-option" onclick="ChangeCategory(this, 'stress')">Symulacje i stres</div>
+                </div>
+                <div class="doj-questions-title" style="font-size: 0.9rem;">Ilość pytań: <span id="questions-count">5</span></div>
+                <input type="range" min="0" max="10" step="1" value="0" id="quest-count">
+            </div>
+            <div class="line"></div>
+            <div class="doj-questions-title">Lista pytań</div>
+            <div class="doj-questions-answered"></div>
+
+            <div class="doj-list-of-questions"></div>
+            <div class="generate-btn">Losuj pytania</div>
+        </div>
+        <div class="footer">Created by Krupeczek (Krupeczek#0616)</div>
+    </div>
+</body>
+<script src="script.js"></script>
+<script src="config.js"></script>
+</html>
+
+<!-- created by krupeczek -->
